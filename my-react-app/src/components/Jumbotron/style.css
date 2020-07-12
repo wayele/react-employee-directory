@@ -1,0 +1,8 @@
+.jumbotron {
+    border: 1px solid black;
+    text-align: center;
+    color: whitesmoke;
+    height: 200px;
+    background-color: orchid;
+    font-weight: bolder;
+}
