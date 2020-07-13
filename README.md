@@ -19,7 +19,7 @@ Project url:
 (https://github.com/wayele/react-employee-directory)
 
 ## Screenshots
-<img src="./my-react-app/public/emp_directory.png">
+<img src="./public/emp_directory.png">
 
 ## Technologies Used
 React JS, Axios, Node JS, HTML, CSS, JavaScript
