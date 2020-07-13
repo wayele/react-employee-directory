@@ -3,16 +3,18 @@ import './style.css'
 
 function SearchForm(props) {
     return (
-        <form>
+        <form onSubmit={props.stopRefresh}>
             <div className="form">
                 <input
                     value={props.search}
                     type="text"
                     name="search"
                     onChange={props.handleInputChange}
-                    placeholder="Search"
+                    placeholder="Filter"
                 />
-                <button onClick={props.handleFormSubmit}>Submit</button>
+                <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
+                    Search
+        </button>
             </div>
         </form>
     )
