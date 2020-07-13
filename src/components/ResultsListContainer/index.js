@@ -12,12 +12,13 @@ class ResultsListContainer extends Component {
         search: "",
         employees: [],
         results: [],
+        filteredEmployees: [],
         error: ""
     }
 
     componentDidMount() {
         API.employees()
-            .then(res => this.setState({ employees: res.data.results }))
+            .then(res => this.setState({ employees: res.data.results, filteredEmployees: res.data.results }))
             .catch(err => console.log(err));
     }
 
@@ -49,7 +50,7 @@ class ResultsListContainer extends Component {
                 <SearchForm handleSearchChange={this.handleInputChange} />
                 <table className="table">
                     <TableHeader />
-                    {this.state.employees.map(employee => (
+                    {this.state.filteredEmployees.map(employee => (
                         <TableRows
                             key={employee.id.value}
                             firstName={employee.name.first}
