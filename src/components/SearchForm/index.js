@@ -9,12 +9,12 @@ function SearchForm(props) {
                     value={props.search}
                     type="text"
                     name="search"
-                    onChange={props.handleInputChange}
+                    onChange={props.handleSearchChange}
                     placeholder="Filter"
                 />
-                <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
+                {/* <button type="submit" onClick={props.handleSearchChange} className="btn btn-success">
                     Search
-        </button>
+        </button> */}
             </div>
         </form>
     )
